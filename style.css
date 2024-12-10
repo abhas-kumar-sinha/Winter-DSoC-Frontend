@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,900;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* defining variables for global scope */
+:root{
+    --font-color: #3751fe;
+    --form-field: #c1bbbb;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+html,
+body{
+    width: 100%;
+    height: 100%;
+
+}
+
+#main{
+    display: flex;
+}
+
+#login-wrapper{
+    width: 46.5%;
+    padding: 5.5vw 0 5vw 6.25vw;
+}
+
+#login-wrapper .logo{
+    font-size: 2.2vw;
+}
+
+#login-wrapper p{
+    color: var(--font-color);
+    font-weight: 700;
+    line-height: 4vw;
+}
+
+.intro-content{
+    margin: 6.5vw 0 4vw 0;
+    font-size: 2.55vw;
+    letter-spacing: 0.05vw;
+}
+
+fieldset{
+    border: none;
+}
+
+ul{
+    list-style: none;
+}
+
+.email-section-head{
+    color: #9747ff;
+    font-size: 1.25vw;
+    margin-bottom: 0.5vw;
+    margin-top: 1vw;
+}
+
+.input-div{
+    height: 5.1vw;
+    width: 38vw;
+    border: 1.5px solid var(--form-field);
+}
+
+.line-div{
+    height: 5vw;
+    width: 37.9vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1vw 1.5vw;
+    border-left: 3px solid #3751fe;
+}
+
+.form-label{
+    color: #5f5e5e;
+    font-weight: 400;
+    font-size: 1.25vw;
+    margin-top: -0.1vw;
+}
+
+.form-input{
+    height: 2.2vw;
+    font-size: 1.3vw;
+    font-weight: 500;
+    color: var(--font-color);
+    letter-spacing: 0.05vw;
+    margin-top: 0.2vw;
+    border: none;
+    outline: none;
+}
+
+.email-div:hover{
+    border: 1.5px solid transparent;
+    outline: 2px solid #9747ff;
+}
+
+.password-div:hover{
+    border: 1.5px solid transparent;
+    outline: 2px solid #0c8ce9;
+}
+
+.forgot-pass-div{
+    width: 38vw;
+    margin-top: 1.75vw;
+    padding-left: 2vw;
+    color: #636363;
+    cursor: pointer;
+}
+
+#remember-me{
+    margin-right: 0.6vw;
+    cursor: pointer;
+}
+
+.remember-me-in{
+    margin-right: 15vw;
+    cursor: pointer;
+}
+
+.buttons{
+    margin-top: 5vw;
+}
+
+.btn{
+    height: 3.8vw;
+    width: 9vw;
+    margin-right: 2vw;
+    font-size: 1.35vw;
+    background-color: transparent;
+    color: var(--font-color);
+    border: 1.35px solid var(--font-color);
+    cursor: pointer;
+}
+
+.active-btn{
+    background-color: var(--font-color);
+    color: white;
+    box-shadow: 0 4px rgba(0, 0, 255, .2);
+}
+
+.other-login-options{
+    margin: 5vw 0;
+    width: 38vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 3vw;
+
+    a{
+        text-decoration: none;
+        color: #3751fe;
+        font-weight: 600;
+    }
+}
+
+.other-login-head{
+    color: #636363;
+}
+
+.login-options-links{
+    width: 25vw;
+    margin-right: 1vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#desc-wrapper{
+    width: 53.5%;
+    background-color: #f4f4f4;
+    padding: 5.5vw 0 5vw 6.25vw;
+}
+
+.nav-bar{
+    height: 2.75vw;
+    width: 67.5%;
+    font-size: 1.65vw;
+    display: flex;
+    justify-content: space-between;
+    color: #636363;
+    margin-left: 3.6vw;
+    margin-top: 0.4vw;
+}
+
+.nav-options{
+    padding: 0.2vw;
+    height: 100%;
+    cursor: pointer;
+}
+
+.nav-active{
+    border-bottom: 3.5px solid #657bec;
+}
+
+.swipeable-content{
+    height: 31vw;
+    width: 52.8vw;
+    margin-top: 5.5vw;
+    margin-left: -6.25vw;
+    display: flex;
+    overflow-y: scroll;
+}
+
+.swipeable-content::-webkit-scrollbar{
+    display: none;
+}
+
+.content-home{
+    height: 100%;
+    width: 100%;
+    background-image: url(./assets/home.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 1px solid green;
+    flex-shrink: 0;
+}
